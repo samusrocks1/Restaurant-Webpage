@@ -70,3 +70,8 @@ export function createImage(){
     content.src = './CookieEmporiumLogo.jpg';
     document.querySelector('#navigation').appendChild(content);
 }
+
+export function createBreak(){
+    const content = document.createElement('br');
+    document.querySelector('#navigation').appendChild(content);
+}

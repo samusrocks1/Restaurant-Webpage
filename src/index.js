@@ -1,6 +1,7 @@
 console.log('test');
-import {createParagraph, createHeader1, appendHeader, appendParagraph, appendDiv, removeDiv, createNavigation, appendNavigation, createHeader2, appendHeader2, createImage} from './createElements';
+import {createParagraph, createHeader1, appendHeader, appendParagraph, appendDiv, removeDiv, createNavigation, appendNavigation, createHeader2, appendHeader2, createImage, createBreak} from './createElements';
 createImage();
+createBreak();
 appendNavigation('about us');
 document.getElementById('about us').onclick = function() {displayAboutUs()};
 appendNavigation('menu');
@@ -29,9 +30,15 @@ function displayMenu(){
     appendDiv('content');
     appendHeader('The Cookie Emporium Menu');
     appendHeader2('Classic Cookies');
-    appendParagraph('These are the classic cookies that everyone knows and loves');
+    appendParagraph('These are the classic cookies that everyone knows and loves. We offer Chocolate Chip, Oatmeal, Oatmeal Raisin, Chocolate, Sugar, Peanut Butter, Shortbread, and Gingerbread.');
+    appendParagraph('Single cookie: $1.25');
+    appendParagraph('3 cookies: $3.00');
+    appendParagraph('6 cookies: $5.00');
     appendHeader2('Signature Cookies');
     appendParagraph('These are speciality cookies that we have created in house');
+    appendParagraph('Single cookie: $2.00');
+    appendParagraph('3 cookies: $5.50');
+    appendParagraph('6 cookies: $8.00');
     appendHeader2('Celebration Cookies');
     appendParagraph('These are cookies we have designed for celebrations');
 }
